@@ -1,5 +1,6 @@
 package com.example.listasegrades
 
+import android.app.Activity
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         viewManager = LinearLayoutManager(this)
+        val myDataset = arrayOf("TESTE BEM LONGO", "OUTRO TESTE BEM MAIOR")
         viewAdapter = MyAdapter(myDataset)
 
         recyclerView = findViewById<RecyclerView>(R.id.my_recycler_view).apply {
@@ -28,7 +30,6 @@ class MainActivity : AppCompatActivity() {
 
             // specify an viewAdapter (see also next example)
             adapter = viewAdapter
-
         }
 
     }
