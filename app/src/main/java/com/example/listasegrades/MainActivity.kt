@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.Toolbar
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,8 +17,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val myToolbar = findViewById(R.id.my_toolbar) as Toolbar
+        setSupportActionBar(myToolbar)
+
         viewManager = LinearLayoutManager(this)
-        val myDataset = arrayOf("TESTE BEM LONGO", "OUTRO TESTE BEM MAIOR")
+
+        val myDataset = arrayOf(
+            "Rafael",
+            "Scotti",
+            "Zanella")
+
+
         viewAdapter = MyAdapter(myDataset)
 
         recyclerView = findViewById<RecyclerView>(R.id.my_recycler_view).apply {
