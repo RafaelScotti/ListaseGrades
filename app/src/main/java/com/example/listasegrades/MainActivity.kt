@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
         val myToolbar = findViewById(R.id.my_toolbar) as Toolbar
         setSupportActionBar(myToolbar)
 
+
+
+
         viewManager = LinearLayoutManager(this)
 
         val myDataset = arrayOf(

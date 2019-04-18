@@ -15,7 +15,10 @@
             android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+
+    />
+
 
     <android.support.v4.widget.SwipeRefreshLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -32,7 +35,7 @@
                 android:layout_height="match_parent" tools:itemCount="21"
                 tools:layout_editor_absoluteX="16dp"
 
-                tools:spanCount="5"/>
+        />
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
